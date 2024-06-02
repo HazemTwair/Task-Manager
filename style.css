@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 0.25em;
+}
+
+body {
+  background-color: gainsboro;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+  color: white;
+}
+
+.none {
+  display: none;
+}
+
+.crossed {
+  text-decoration: line-through;
+  text-decoration-color: gray;
+}
+
+span.crossed {
+  color: gray;
+}
+
+header h2 {
+  padding: 0.5em 0;
+  border-bottom: 0.25em solid gray;
+  border-radius: 0;
+}
+
+.card {
+  width: 25em;
+  min-height: 20em;
+  height: auto;
+  margin: 6em auto;
+  padding: 2em;
+  background-color: white;
+  box-shadow: -3px -2px 14px 0px;
+}
+
+.card main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.card main input {
+  border: 1px solid lightgray;
+  padding: 0.8em;
+}
+
+.card main #addTask {
+  background-color: darkcyan;
+  border: none;
+  padding: 0.8em;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.tasks .task {
+  border: 1px solid lightgray;
+  background-color: lavender;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.tasks .task span {
+  text-align: left;
+}
+
+.tasks .task .actions {
+  display: flex;
+}
+
+.tasks .task button {
+  padding: 0.8em;
+  margin: 0 0.25em;
+  border: none;
+}
+
+.tasks .task button.complete {
+  background-color: forestgreen;
+}
+
+.tasks .task button.remove {
+  background-color: crimson;
+}

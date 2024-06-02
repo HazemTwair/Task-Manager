@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <h2>Task Manager</h2>
+      </header>
+      <main>
+        <input type="text" id="taskInput" placeholder="New task" />
+        <button id="addTask" onclick="handleAdded()">Add Task</button>
+        <div class="tasks"></div>
+      </main>
+    </div>
+    <footer>
+      <h6>&copy; 2024 Copyright by Hazem Twair</h6>
+    </footer>
+
+    <div id="taskTemplate" class="task none">
+      <span></span>
+      <div class="actions">
+        <button class="complete" onclick="handleCompleted(this)">
+          Complete
+        </button>
+        <button class="remove" onclick="handleRemoved(this)">Remove</button>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+    <!-- <script src="/using-createElement.js"></script> -->
+  </body>
+</html>
